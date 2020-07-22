@@ -1,0 +1,5 @@
+apply Service "Redmine" {
+  import "daily-service"
+  check_command = "redmine"
+  assign where host.vars.redmine_api_key
+}

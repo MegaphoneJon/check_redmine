@@ -1,0 +1,11 @@
+object Host "redmine.example.com" {
+
+  import "generic-host"
+  /* Import the default host template defined in `templates.conf`. */
+  display_name = "Redmine"
+
+  address = "45.79.128.8"
+  vars.redmine_url = "https://redmine.example.com"
+  vars.redmine_api_key = "abc12345"
+}
+

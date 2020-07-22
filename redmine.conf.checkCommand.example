@@ -1,0 +1,8 @@
+object CheckCommand "redmine" {
+  command = [
+    "/usr/bin/php",
+    PluginDir + "/check_redmine.php",
+    "--api-key", "$redmine_api_key$",
+    "--url", "$redmine_url$",
+  ]
+}
